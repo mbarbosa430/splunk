@@ -23,6 +23,6 @@ systemctl restart firewalld
 
 splunk enable boot-start 
 
-nmcli connection modify ens18 IPv4.address 192.168.58.157
+nmcli connection modify ens18 IPv4.address <internal IP address>
 
 nmcli connection down ens18 && nmcli connection up ens18
